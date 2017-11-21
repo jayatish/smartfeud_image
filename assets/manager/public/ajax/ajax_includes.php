@@ -1,0 +1,25 @@
+<?php
+ob_start();
+session_start();
+
+if($_SERVER['HTTP_HOST'] == "localhost" )
+{
+ $connect_string='localhost';
+ $connect_username='root';
+ $connect_password='';
+ $conect_db='london_youth';
+}
+else
+{
+$connect_string='localhost';
+ $connect_username='lab2.esolz';
+ $connect_password='7scFKvULztJtK7uP';
+ $conect_db='london_youth';
+
+}
+
+mysql_connect($connect_string,$connect_username,$connect_password) or die(mysql_error());
+mysql_select_db($conect_db) or die(mysql_error());
+
+
+?>

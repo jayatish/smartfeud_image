@@ -1,0 +1,19 @@
+<?php
+
+if($_SERVER['HTTP_HOST'] == 'localhost' || strpos($_SERVER['HTTP_HOST'],'127.0.0.1')===0)
+{
+	define('DBHOST','localhost');
+	define('DBNAME','esolz');
+	define('DBUSER','root');
+	define('DBPASSWORD','');
+}
+else
+{
+	define('DBHOST','localhost');
+	define('DBNAME','indoor_football');
+	define('DBUSER','lab2.esolz');
+	define('DBPASSWORD','7scFKvULztJtK7uP');
+}
+
+define('SITE_TABLE_PREFIX','');
+?>

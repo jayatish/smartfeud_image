@@ -1,0 +1,165 @@
+.jcarousel-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width:91%; margin:0 auto;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel ul li {
+    width: 284px;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;  padding:0; margin:0 16px 0 0; text-align:left;border:1px solid #d6d6d6; position:relative;
+    }
+#newgirl .jcarousel ul li{width: 164px !important;}
+
+.jcarousel img {
+    display: block;
+    width: 100%;
+    height: auto !important;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 0px;
+    width:25px;
+    height: 26px;
+    background: url(../images/carousel-control.png) no-repeat 0 0;
+    font-size: 0px;
+}
+
+.jcarousel-control-prev {
+    letf:12px; top:89px;
+    background-position: 0 -26px;
+}
+.jcarousel-control-prev:hover{}
+
+.jcarousel-control-next {
+    right: 12px; top:89px;
+    background-position: 100% 0;
+}
+.jcarousel-control-next:hover {}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}
+
+p.img-heading {position:absolute; bottom:0; left:0; width:90%; font-size:14px; font-weight:700; color:#fff; background: rgba(0, 0, 0, 0.7); margin:0; padding:5%;}
+p.img-heading a {text-decoration:none; color:#fff;}
+p.img-heading a:hover {text-decoration:none; color:#d60000;}
+
+
+
+/** Testimonial Carousel **/
+#testimonial .jcarousel ul li{width: 1120px !important;padding: 0 90px;border:0;text-align: left; margin:0;}
+#testimonial .jcarousel img{width: auto;display: inline-block;}
+/** Carousel Controls **/
+
+#testimonial .jcarousel-control-prev,
+#testimonial .jcarousel-control-next {
+    position: absolute;
+    top: 0px;
+    width: 40px;
+    height: 70px;
+    background: url(../images/carousel-control-testimonial.png) no-repeat 0 0;
+    font-size: 0px;
+}
+
+#testimonial .jcarousel-control-prev {
+    left:17px; top:36%;
+    background-position: 0 -70px;
+}
+
+
+#testimonial .jcarousel-control-next {
+    right: 17px; top:36%;
+    background-position: 100% 0;
+}
+/** Testimonial Carousel **/
+
+
+
+
+@media only screen and (min-width: 980px) and (max-width: 1279px) {
+    #newgirl .jcarousel ul li {width:158px !important;}
+	#testimonial .jcarousel ul li {width:862px !important; padding:0 20px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	#newgirl .jcarousel ul li {width:155px !important;}
+	#testimonial .jcarousel ul li {width:710px !important; padding:0 20px;}
+	.clients-content p {width:78%;}
+      
+    }
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+	#newgirl .jcarousel ul li {width:172px !important;}
+	#testimonial .jcarousel ul li {width:580px !important; padding:0 20px;}
+    
+}
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+		
+		#newgirl .jcarousel ul li {width:124px !important;}
+		#testimonial .jcarousel ul li {width:410px !important; padding:0 20px;}
+    
+    }
+@media only screen and (max-width : 479px) {
+	#newgirl .jcarousel ul li {width:120px !important;}
+	#testimonial .jcarousel ul li {padding:0 20px; width:280px !important;}
+    
+}

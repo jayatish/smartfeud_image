@@ -1,0 +1,30 @@
+<?php
+include('ajax_includes.php');
+
+$sql = "SELECT * FROM user_notification WHERE alert = '1' order by notification_date desc limit 5 ";
+$result = mysql_query($sql);
+?>
+
+<div id="notification">
+	<ul class="dropdown-menu pull-right">
+		<?php
+		while($rs = mysql_fetch_array($result))
+		{
+		?>
+			<li class="quick-messages">
+				<img src="img/avatar-1.png" class="avatar" alt="Avatar">
+				<div class="message-date text-info">
+					<i>02 <span class="month">mins</span></i>
+				</div>
+				<div class="message-wrapper">
+					<h4 class="message-heading"><?php echo $rs['notification_id']; ?></h4>
+					<p class="message">
+						<?php echo $rs['user_id']; ?>
+					</p>
+				</div>
+			</li>
+		<?php
+		}
+		?>
+	</ul>
+</div>

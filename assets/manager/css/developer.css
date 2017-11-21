@@ -1,0 +1,66 @@
+
+.admin_error_msg{
+	color: #000000;
+	text-align: center;
+	line-height: 40px !important;
+	background: #F78181 none repeat scroll 0% 0%;
+	max-width: 330px;margin:16px auto;
+	font-weight:bold;
+	border-radius: 5px;
+}
+
+.admin_success_msg{
+	color: #000000;
+	text-align: center;
+	line-height: 40px !important;
+	background: #A9F5BC none repeat scroll 0% 0%;
+	max-width: 330px;margin:16px auto;
+	font-weight:bold;
+	border-radius: 5px;
+}
+
+.dashboard-div{
+	height:100px;
+	width:100px;
+	text-align:center;
+	
+}
+
+.error_msg{
+	background: #F78181 none repeat scroll 0% 0%;
+	color: #000000;
+	font-size: 15px;
+	font-weight: bold;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.success_msg{
+	background: #A9F5BC none repeat scroll 0% 0%;
+	color: #000000;
+	font-size: 15px;
+	font-weight: bold;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.add_new{
+	background: #1fb5ad none repeat scroll 0 0;
+	border-radius: 5px;
+	float: right;
+	height: 38px;
+	line-height: 40px;
+	text-align: center;
+	width: 160px;
+}
+.add_new a{
+	font-weight: bold;
+	color: #ffffff;
+	text-transform: uppercase;
+}

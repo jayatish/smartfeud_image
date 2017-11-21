@@ -1,0 +1,9 @@
+public function ajax_customer_search() {
+	$q = isset($_POST['q']) ? $_POST['q'] : "";
+	$limit = isset($_POST['limit']) ? $_POST['limit'] : "";
+	$result = $this->db->query("SELECT * FROM london_youth.job_category WHERE name LIKE '%$q%' ORDER BY name ASC LIMIT 0,$limit")->result();
+	$customers = array();
+	foreach($result as $customer) {
+		echo "{$customer->id}:$customer->title\n";
+			}
+		}

@@ -1,0 +1,8 @@
+<?php
+include('ajax_includes.php');
+
+$email = $_REQUEST['email'];
+$result = mysql_query("SELECT count(*) as cnt FROM users WHERE email = '".$email."' ");
+$rs = mysql_fetch_array($result);
+echo $rs['cnt'];
+?>
