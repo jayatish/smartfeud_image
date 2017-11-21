@@ -15,6 +15,9 @@ class Api extends CI_Controller
 		header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 
 	}
+	function test_side(){
+		echo "test side";
+	}
 	function ImageUpload(){
 		$result = array();
 		//echo json_encode($_FILES['profileImage']);
